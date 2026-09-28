@@ -126,7 +126,6 @@ section + section { border-top: 1px solid var(--line); }
   gap: .8rem 1.5rem;
   padding: clamp(1rem, 3vw, 1.45rem);
   color: inherit;
-  text-decoration: none;
   border: 2px solid var(--ink);
   background: var(--surface);
 }
@@ -136,9 +135,29 @@ section + section { border-top: 1px solid var(--line); }
 .post:nth-child(4) { border-radius: var(--radius-4); }
 .post:hover { background: var(--accent); color: var(--accent-ink); }
 .post h3 { margin: 0 0 .45rem; font-size: clamp(1.05rem, 3vw, 1.45rem); }
+.post h3 a { text-decoration: none; }
+.post h3 a:hover { text-decoration: underline wavy 2px var(--accent-ink); text-underline-offset: 5px; }
 .post p { grid-column: 1; margin: 0; color: var(--muted); font-size: .78rem; line-height: 1.55; }
-.post:hover p, .post:hover .post-meta { color: var(--accent-ink); }
-.post-meta { grid-column: 2; grid-row: 1 / span 2; align-self: center; color: var(--muted); font-size: .67rem; text-align: right; white-space: nowrap; }
+.post:hover p, .post:hover .post-meta, .post:hover .tag { color: var(--accent-ink); }
+.post-meta {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  color: var(--muted);
+  font-size: .67rem;
+  text-align: right;
+  line-height: 1.55;
+}
+.post-meta time { display: block; white-space: nowrap; }
+.post-tags { display: block; margin-top: .2rem; }
+.tag {
+  color: inherit;
+  opacity: .75;
+  font-weight: 350;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.tag:hover { opacity: 1; text-decoration-style: wavy; }
 
 .project-grid {
   display: grid;
@@ -306,6 +325,7 @@ footer { padding-block: clamp(2rem, 6vw, 4rem) max(2rem, env(safe-area-inset-bot
   font-size: .78rem;
   font-weight: 700;
 }
+.post-date .tag { font-weight: 350; }
 .post-body {
   font-size: clamp(1rem, 2.1vw, 1.12rem);
   line-height: 1.8;
@@ -313,4 +333,69 @@ footer { padding-block: clamp(2rem, 6vw, 4rem) max(2rem, env(safe-area-inset-bot
 }
 .post-body p { margin: 0 0 1.25em; }
 .post-body p:last-child { margin-bottom: 0; }
+
+.poem {
+  margin: 2rem 0 0;
+  padding: 1.25rem 0 0;
+  border-top: 1px solid var(--line);
+}
+.poem-title {
+  font-size: clamp(1.15rem, 3vw, 1.45rem);
+  margin: 0 0 1.25rem;
+}
+.poem p {
+  margin: 0 0 1.1em;
+  line-height: 1.65;
+}
+.poem p:last-child { margin-bottom: 0; }
+
+/* Tag pages */
+.tag-page {
+  padding-block: clamp(2rem, 6vw, 4rem) clamp(2.5rem, 8vw, 5.5rem);
+}
+.tag-page .section-head h1 {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+}
+
+/* Archive page */
+.archive-page {
+  padding-block: clamp(2rem, 6vw, 4rem) clamp(2.5rem, 8vw, 5.5rem);
+  width: min(100% - 10vw, 68ch);
+}
+.archive-page .section-head h1 {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+}
+.archive-tags {
+  margin: 0 0 clamp(2rem, 5vw, 3rem);
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+.archive-tags summary {
+  cursor: pointer;
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--muted);
+  list-style: none;
+}
+.archive-tags summary::-webkit-details-marker { display: none; }
+.archive-tags summary::before {
+  content: "▸ ";
+  display: inline-block;
+  transition: transform .15s ease;
+}
+.archive-tags[open] summary::before { transform: rotate(90deg); }
+.archive-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem .9rem;
+  margin-top: .9rem;
+}
+.archive-tag-list .tag {
+  font-size: .85rem;
+}
+.timeline-year { margin-top: clamp(1.5rem, 4vw, 2.5rem); }
+.timeline-title {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.35rem, 3.5vw, 1.8rem);
+}
 
