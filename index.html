@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#fafafd" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#2e2e38" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,350;0,500;0,700;1,350&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Joshua Lu</title>
+</head>
+<body>
+  <header class="page">
+    <nav aria-label="Primary navigation">
+      <a class="home-link" href="index.html">Joshua Lu</a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="index.html#journal">Blog</a>
+        <a href="index.html#work">Projects</a>
+        <a href="index.html#hobbies">Hobbies</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero outdent">
+      <h1 class="hero-name">Joshua<br>Lu</h1>
+      <div class="hero-copy">
+        <p>Hi, I’m Joshua Lu — a student / software engineer. This is a home for the work, questions, and small experiments I care about.</p>
+        <div class="hero-links">
+          <a href="#journal">Blog →</a>
+          <a href="#work">Active projects →</a>
+          <a href="about.html">More about me →</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="journal" class="page">
+      <div class="section-head">
+        <h2>Blog</h2>
+        <span class="section-label">Four notes to start with ↓</span>
+      </div>
+      <p class="section-intro">Short posts are enough. Write about what you learned, what surprised you, or a question you can’t stop thinking about.</p>
+      <div class="post-list">
+        <a class="post" href="#journal">
+          <div><h3>[What building my first real project taught me]</h3><p>[A sharp opening thought that makes the reader want the rest.]</p></div>
+          <div class="post-meta">[MONTH DD, 2026]<br>#projects · 5 min</div>
+        </a>
+        <a class="post" href="#journal">
+          <div><h3>[Five small ideas I’m thinking about lately]</h3><p>[A useful list, a field note, or a compact point of view.]</p></div>
+          <div class="post-meta">[MONTH DD, 2026]<br>#notes · 3 min</div>
+        </a>
+        <a class="post" href="#journal">
+          <div><h3>[How I approach a problem I don’t understand]</h3><p>[Share your process honestly; specificity shows personality.]</p></div>
+          <div class="post-meta">[MONTH DD, 2026]<br>#process · 7 min</div>
+        </a>
+        <a class="post" href="#hobbies">
+          <div><h3>[A tiny experiment worth sharing]</h3><p>[Not every idea needs to become a polished case study.]</p></div>
+          <div class="post-meta">[MONTH DD, 2026]<br>#hobbies · 2 min</div>
+        </a>
+      </div>
+    </section>
+
+    <section id="work" class="outdent">
+      <div class="section-head">
+        <h2>Active projects</h2>
+        <span class="section-label">Three good places to start ↓</span>
+      </div>
+      <p class="section-intro">Choose projects that show different sides of you. Lead with the problem, then explain your contribution and the result.</p>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-art" aria-hidden="true">
+            <svg viewBox="0 0 200 200" fill="none">
+              <rect x="25" y="25" width="150" height="150" stroke="currentColor" stroke-width="4"/>
+              <circle cx="100" cy="100" r="50" stroke="currentColor" stroke-width="4"/>
+              <path d="M25 100h150M100 25v150M65 65l70 70M135 65l-70 70" stroke="currentColor" stroke-width="4"/>
+              <circle cx="100" cy="100" r="12" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="tag">[PROJECT TYPE] · [YEAR]</span>
+          <h3>[Project name]</h3>
+          <p>[What you made, who it helped, and why it mattered.]</p>
+        </article>
+        <article class="project-card">
+          <div class="project-art" aria-hidden="true">
+            <svg viewBox="0 0 200 200" fill="none">
+              <path d="M16 143c34-74 75-74 122 0 20-46 37-46 50 0" stroke="currentColor" stroke-width="12"/>
+              <circle cx="55" cy="60" r="23" fill="var(--accent)" stroke="currentColor" stroke-width="3"/>
+              <circle cx="153" cy="58" r="10" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="tag">[PROJECT TYPE] · [YEAR]</span>
+          <h3>[A second project]</h3>
+          <p>[Name the challenge, the part you owned, and one concrete outcome.]</p>
+        </article>
+        <article class="project-card">
+          <div class="project-art" aria-hidden="true">
+            <svg viewBox="0 0 200 200" fill="none">
+              <path d="M100 28l21 43 47 7-34 33 8 47-42-22-42 22 8-47-34-33 47-7 21-43Z" fill="currentColor"/>
+              <circle cx="100" cy="100" r="68" stroke="currentColor" stroke-width="3"/>
+              <circle cx="100" cy="100" r="30" fill="var(--accent-soft)" stroke="currentColor" stroke-width="3"/>
+            </svg>
+          </div>
+          <span class="tag">[EXPERIMENT] · [YEAR]</span>
+          <h3>[A wild card]</h3>
+          <p>[A creative tool, research idea, collaboration, or something made for fun.]</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="hobbies" class="page">
+      <div class="section-head">
+        <h2>Hobbies</h2>
+        <span class="section-label">Outside of work and school</span>
+      </div>
+      <div class="playground">
+        <div class="canvas" role="img" aria-label="Hobbies section work in progress">
+          <span class="canvas-word">Work in progress<small>Coming soon</small></span>
+        </div>
+        <div class="play-copy">
+          <h3>Things I spend time on when I’m not coding.</h3>
+          <p>A few interests that shape how I think and what I make.</p>
+          <ul class="play-list">
+            <li><span>Movie reviews</span><span>HOBBY</span></li>
+            <li><span>Learning guitar</span><span>HOBBY</span></li>
+            <li><span>Gaming</span><span>HOBBY</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page">
+    <div class="footer-row">
+      <span>© Joshua Lu 2026</span>
+      <div class="footer-links">
+        <a href="mailto:jlu69@ucla.edu">Email</a>
+        <a href="https://github.com/GOGOJO">GitHub</a>
+        <a href="https://www.linkedin.com/in/joshualu0201/">LinkedIn</a>
+        <a href="resume.pdf">Resume</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
