@@ -105,9 +105,8 @@ nav a:hover { text-decoration: underline wavy 2px var(--accent); text-underline-
   font-size: clamp(1rem, 2.2vw, 1.25rem);
 }
 .hero-copy strong { background: var(--accent); color: var(--accent-ink); padding-inline: .15em; }
-.hero-links { display: flex; flex-wrap: wrap; gap: .7rem 1.4rem; margin-top: 1.4rem; font-size: .82rem; font-weight: 700; }
 
-section { padding-block: clamp(2.5rem, 8vw, 5.5rem); scroll-margin-top: 1rem; }
+    section { padding-block: clamp(2.5rem, 8vw, 5.5rem); scroll-margin-top: 1rem; }
 section + section { border-top: 1px solid var(--line); }
 .section-head {
   display: flex;
