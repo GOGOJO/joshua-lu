@@ -68,19 +68,29 @@
       </div>
     </section>
 
-    <section id="work" class="page">
+    <section id="work" class="outdent">
       <div class="section-head">
         <h2>Active projects</h2>
-        <span class="section-label">Coming soon</span>
+        <span class="section-label">One place to start ↓</span>
       </div>
-      <div class="playground">
-        <div class="canvas" role="img" aria-label="Projects section work in progress">
-          <span class="canvas-word">Work in progress<small>Coming soon</small></span>
-        </div>
-        <div class="play-copy">
-          <h3>Projects are still cooking.</h3>
-          <p>I’ll share what I’m building here once there’s something ready to show.</p>
-        </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-art" aria-hidden="true">
+            <svg viewBox="0 0 200 200" fill="none">
+              <rect x="30" y="40" width="140" height="120" rx="8" stroke="currentColor" stroke-width="4"/>
+              <path d="M30 70h140" stroke="currentColor" stroke-width="4"/>
+              <path d="M70 40v20M130 40v20" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="70" cy="105" r="8" fill="currentColor"/>
+              <circle cx="100" cy="105" r="8" fill="var(--accent)"/>
+              <circle cx="130" cy="105" r="8" fill="currentColor"/>
+              <circle cx="70" cy="135" r="8" fill="currentColor"/>
+              <circle cx="100" cy="135" r="8" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="tag">TYPESCRIPT · 2026</span>
+          <h3><a href="https://github.com/GOGOJO/SyllabusToCalendar">SyllabusToCalendar</a></h3>
+          <p>Upload a course syllabus (PDF or image), extract midterms, finals, and deadlines, then add them to Google Calendar.</p>
+        </article>
       </div>
     </section>
 

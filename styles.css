@@ -160,10 +160,10 @@ section + section { border-top: 1px solid var(--line); }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1rem;
 }
-.project-card { min-width: 0; }
+.project-card { min-width: 0; max-width: 320px; }
 .project-art {
   position: relative;
   overflow: hidden;
