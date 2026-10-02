@@ -325,6 +325,17 @@ footer { padding-block: clamp(2rem, 6vw, 4rem) max(2rem, env(safe-area-inset-bot
   font-weight: 700;
 }
 .post-date .tag { font-weight: 350; }
+.movie-meta {
+  margin: .55rem 0 0;
+  font-size: .82rem;
+  font-weight: 700;
+}
+.movie-rating {
+  color: var(--accent-ink);
+  background: var(--accent);
+  padding: .05em .35em;
+  letter-spacing: .08em;
+}
 .post-body {
   font-size: clamp(1rem, 2.1vw, 1.12rem);
   line-height: 1.8;
