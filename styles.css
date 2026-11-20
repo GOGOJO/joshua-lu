@@ -177,6 +177,7 @@ section + section { border-top: 1px solid var(--line); }
 .project-card:nth-child(2) .project-art { border-radius: var(--radius-3); background: var(--coral); }
 .project-card:nth-child(3) .project-art { border-radius: var(--radius-2); background: var(--accent); }
 .project-card:hover .project-art, .project-card:focus-within .project-art { filter: saturate(1); transform: rotate(-1deg); }
+a.project-art { display: block; color: inherit; }
 .project-art svg { position: absolute; inset: 10%; width: 80%; height: 80%; }
 .project-card h3 { margin: .9rem 0 .25rem; font-size: 1rem; }
 .project-card p { color: var(--muted); font-size: .7rem; line-height: 1.5; }
