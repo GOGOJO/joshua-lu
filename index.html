@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,350;0,500;0,700;1,350&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
   <title>Joshua Lu</title>
 </head>
 <body>
@@ -87,58 +87,64 @@
       </div>
       <div class="project-grid">
         <article class="project-card">
-          <a class="project-art" href="https://github.com/GOGOJO/SyllabusToCalendar" tabindex="-1" aria-hidden="true">
-            <svg viewBox="0 0 200 200" fill="none">
-              <rect x="30" y="40" width="140" height="120" rx="8" stroke="currentColor" stroke-width="4"/>
-              <path d="M30 70h140" stroke="currentColor" stroke-width="4"/>
-              <path d="M70 40v20M130 40v20" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
-              <circle cx="70" cy="105" r="8" fill="currentColor"/>
-              <circle cx="100" cy="105" r="8" fill="var(--accent)"/>
-              <circle cx="130" cy="105" r="8" fill="currentColor"/>
-              <circle cx="70" cy="135" r="8" fill="currentColor"/>
-              <circle cx="100" cy="135" r="8" fill="currentColor"/>
-            </svg>
-          </a>
+          <div class="project-art" aria-hidden="true">
+            <a class="project-art-link" href="https://github.com/GOGOJO/SyllabusToCalendar" tabindex="-1">
+              <svg viewBox="0 0 200 200" fill="none">
+                <rect x="30" y="40" width="140" height="120" rx="8" stroke="currentColor" stroke-width="4"/>
+                <path d="M30 70h140" stroke="currentColor" stroke-width="4"/>
+                <path d="M70 40v20M130 40v20" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="70" cy="105" r="8" fill="currentColor"/>
+                <circle cx="100" cy="105" r="8" fill="var(--accent)"/>
+                <circle cx="130" cy="105" r="8" fill="currentColor"/>
+                <circle cx="70" cy="135" r="8" fill="currentColor"/>
+                <circle cx="100" cy="135" r="8" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
           <span class="tag">TYPESCRIPT · 2026</span>
           <h3><a href="https://github.com/GOGOJO/SyllabusToCalendar">SyllabusToCalendar</a></h3>
           <p>Upload a course syllabus (PDF or image), extract midterms, finals, and deadlines, then add them to Google Calendar.</p>
         </article>
         <article class="project-card">
-          <a class="project-art" href="https://gogojo.github.io/BananaDeath/" tabindex="-1" aria-hidden="true">
-            <svg viewBox="0 0 200 200" fill="none">
-              <path d="M48 52C30 110 80 170 165 150c7-2 7-12-1-13-54 3-90-33-94-85-1-10-20-10-22 0z" fill="var(--accent)" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
-              <path d="M51 48l-5-18h12" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M62 95l10 10M72 95l-10 10M83 119l10 10M93 119l-10 10" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
-              <circle cx="122" cy="143" r="4" fill="currentColor"/>
-              <circle cx="104" cy="141" r="3" fill="currentColor"/>
-            </svg>
-          </a>
+          <div class="project-art" aria-hidden="true">
+            <a class="project-art-link" href="https://gogojo.github.io/BananaDeath/" tabindex="-1">
+              <svg viewBox="0 0 200 200" fill="none">
+                <path d="M48 52C30 110 80 170 165 150c7-2 7-12-1-13-54 3-90-33-94-85-1-10-20-10-22 0z" fill="var(--accent)" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M51 48l-5-18h12" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M62 95l10 10M72 95l-10 10M83 119l10 10M93 119l-10 10" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="122" cy="143" r="4" fill="currentColor"/>
+                <circle cx="104" cy="141" r="3" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
           <span class="tag">PYTORCH · 2026</span>
           <h3><a href="https://gogojo.github.io/BananaDeath/">Banana Death</a></h3>
           <p>Upload a photo of a banana and a fine-tuned ResNet18 estimates how close it is to death, right in your browser. Off by about 0.7 days on held-out photos. <a class="tag" href="https://github.com/GOGOJO/BananaDeath">Source</a></p>
         </article>
         <article class="project-card">
           <div class="project-art" aria-hidden="true">
-            <svg viewBox="0 0 200 200" fill="none" shape-rendering="crispEdges">
-              <rect x="92" y="28" width="16" height="16" fill="currentColor"/>
-              <rect x="60" y="44" width="80" height="16" fill="currentColor"/>
-              <rect x="44" y="60" width="48" height="16" fill="var(--coral)"/>
-              <rect x="92" y="60" width="16" height="16" fill="currentColor"/>
-              <rect x="108" y="60" width="48" height="16" fill="var(--coral)"/>
-              <rect x="28" y="76" width="16" height="16" fill="var(--coral)"/>
-              <rect x="44" y="76" width="16" height="16" fill="var(--surface)"/>
-              <rect x="60" y="76" width="112" height="16" fill="var(--coral)"/>
-              <rect x="28" y="92" width="16" height="16" fill="var(--coral)"/>
-              <rect x="44" y="92" width="16" height="16" fill="var(--surface)"/>
-              <rect x="60" y="92" width="112" height="16" fill="var(--coral)"/>
-              <rect x="28" y="108" width="144" height="16" fill="var(--coral)"/>
-              <rect x="28" y="124" width="144" height="16" fill="var(--coral)"/>
-              <rect x="44" y="140" width="112" height="16" fill="var(--coral)"/>
-              <rect x="60" y="156" width="80" height="16" fill="var(--coral)"/>
-            </svg>
+            <a class="project-art-link" href="https://github.com/GOGOJO/pixel-pomodoro" tabindex="-1">
+              <svg viewBox="0 0 200 200" fill="none" shape-rendering="crispEdges">
+                <rect x="92" y="28" width="16" height="16" fill="currentColor"/>
+                <rect x="60" y="44" width="80" height="16" fill="currentColor"/>
+                <rect x="44" y="60" width="48" height="16" fill="var(--coral)"/>
+                <rect x="92" y="60" width="16" height="16" fill="currentColor"/>
+                <rect x="108" y="60" width="48" height="16" fill="var(--coral)"/>
+                <rect x="28" y="76" width="16" height="16" fill="var(--coral)"/>
+                <rect x="44" y="76" width="16" height="16" fill="var(--surface)"/>
+                <rect x="60" y="76" width="112" height="16" fill="var(--coral)"/>
+                <rect x="28" y="92" width="16" height="16" fill="var(--coral)"/>
+                <rect x="44" y="92" width="16" height="16" fill="var(--surface)"/>
+                <rect x="60" y="92" width="112" height="16" fill="var(--coral)"/>
+                <rect x="28" y="108" width="144" height="16" fill="var(--coral)"/>
+                <rect x="28" y="124" width="144" height="16" fill="var(--coral)"/>
+                <rect x="44" y="140" width="112" height="16" fill="var(--coral)"/>
+                <rect x="60" y="156" width="80" height="16" fill="var(--coral)"/>
+              </svg>
+            </a>
           </div>
           <span class="tag">TAURI · 2026</span>
-          <h3>Pixel Pomodoro</h3>
+          <h3><a href="https://github.com/GOGOJO/pixel-pomodoro">Pixel Pomodoro</a></h3>
           <p>A cozy macOS focus timer set in tiny animated pixel-art worlds: a rainy bedroom, a forest cabin, a sakura café, and a night city. Built with Tauri, Rust, and React.</p>
         </article>
       </div>
